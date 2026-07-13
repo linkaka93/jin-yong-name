@@ -1,0 +1,4 @@
+interface:
+  display_name: "金庸帮你起名字"
+  short_description: "为真实孩子和真人起中文姓名，克制、顺口、有金庸式方法。"
+  default_prompt: "Use $jin-yong-name to 先一次性确认姓氏、性别、名字字数、必须保留的字、禁忌出现的字和主要命名维度；主要维度可补一个辅助维度，也可填写自定义感觉或参考名字，再给我 3 个精选名和 2 个备选名。"
