@@ -31,6 +31,20 @@
 
 适用于支持开放 Agent Skills 格式的 Codex、Claude Code、Cursor、Gemini CLI、GitHub Copilot、Cline、OpenCode 等工具。
 
+### 通用免交互安装（推荐）
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/linkaka93/jin-yong-name/main/install.sh | sh
+```
+
+该安装器会识别 WorkBuddy、Codex、Claude Code、Cursor、Gemini CLI 和 GitHub Copilot，不会弹出 Agent 选择界面。无法识别时，默认安装到通用的 `~/.agents/skills/`。
+
+只安装到 WorkBuddy：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/linkaka93/jin-yong-name/main/install.sh | sh -s -- --agent workbuddy
+```
+
 ### 自动识别本机 Agent
 
 ```bash
@@ -56,7 +70,7 @@ npx skills add linkaka93/jin-yong-name --skill jin-yong-name -g -a claude-code -
 把下面这段话直接发给你的 Agent：
 
 ```text
-请从 https://github.com/linkaka93/jin-yong-name/tree/main/skills/jin-yong-name 安装名为 jin-yong-name 的 Agent Skill。请复制完整 skill 目录，包括 SKILL.md、references、scripts、evals 和 agents，不要只复制 SKILL.md。安装后请检查 SKILL.md 的 name 为 jin-yong-name，并运行 evals/validate_skill_contract.py 验证。
+请阅读并执行这个免交互安装说明：https://raw.githubusercontent.com/linkaka93/jin-yong-name/main/INSTALL.md 。安装名为 jin-yong-name 的完整 Agent Skill，不要使用会弹出 Agent 选择界面的交互命令。安装后请检查 SKILL.md、references、scripts、evals 和 agents 是否齐全。
 ```
 
 如果所用工具支持“从 GitHub 导入 Skill”，直接粘贴仓库地址：
